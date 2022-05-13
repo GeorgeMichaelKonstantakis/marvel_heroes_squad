@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.activities.HeroActivity"
+    android:background="@color/white">
+
+    <ImageView
+        android:id="@+id/hero_thumbnail_image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rectangle_shape"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/dismiss_hero"
+        android:layout_width="@dimen/_20sdp"
+        android:layout_height="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_2sdp"
+        android:layout_gravity="center|center_vertical"
+        android:layout_marginStart="@dimen/_2sdp"
+        android:text="X"
+        android:textSize="@dimen/_12ssp"
+        android:textColor="@color/white"
+        android:background="@drawable/dismiss_button"
+        android:fontFamily="@font/roboto"
+        app:layout_constraintStart_toStartOf="@id/hero_thumbnail_image"
+        app:layout_constraintTop_toTopOf="@id/hero_thumbnail_image" />
+
+    <TextView
+        android:id="@+id/hero_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:gravity="center"
+        android:text="Hero Title"
+        android:textColor="@color/text_dark"
+        android:textSize="@dimen/_26ssp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/hero_thumbnail_image" />
+
+    <Button
+        android:id="@+id/hero_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:text="Action"
+        android:textSize="@dimen/_14ssp"
+        android:paddingTop="10dp"
+        android:fontFamily="@font/roboto"
+        android:paddingBottom="10dp"
+        android:textColor="@color/white"
+        android:textAlignment="center"
+        android:background="@drawable/purple_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/hero_title" />
+
+    <TextView
+        android:id="@+id/hero_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:textColor="@color/description_text_color"
+        android:textSize="@dimen/_12ssp"
+        android:fontFamily="@font/roboto"
+        android:text="Hero Description"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/hero_button" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
